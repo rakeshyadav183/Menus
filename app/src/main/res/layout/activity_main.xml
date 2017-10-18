@@ -24,24 +24,24 @@
         app:layout_constraintTop_toBottomOf="@+id/btnSimpleMenu" />
 
     <Button
-        android:id="@+id/btnMenuFromBaseActivity"
+        android:id="@+id/btnContextMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Menus From Base Activity"
+        android:text="Context Menu"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/btnSubmenu" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnContextualActionMode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Contextual Action Mode"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/btnMenuFromBaseActivity" />
+        app:layout_constraintTop_toBottomOf="@+id/btnContextMenu" />
 
     <Button
         android:id="@+id/button5"
@@ -52,4 +52,5 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="8dp"
         app:layout_constraintTop_toBottomOf="@+id/button4" />
+
 </android.support.constraint.ConstraintLayout>

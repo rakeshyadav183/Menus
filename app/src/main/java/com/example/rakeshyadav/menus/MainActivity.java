@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button btnSimpleMenu, btnSubmenu, btnMenuFromBaseActivity;
+    private Button btnSimpleMenu, btnSubmenu, btnContextMenu, btnContextualActionMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
         btnSimpleMenu = (Button) findViewById(R.id.btnSimpleMenu);
         btnSubmenu = (Button) findViewById(R.id.btnSubmenu);
-        btnMenuFromBaseActivity = (Button) findViewById(R.id.btnMenuFromBaseActivity);
+        btnContextMenu = (Button) findViewById(R.id.btnContextMenu);
+        btnContextualActionMode = (Button) findViewById(R.id.btnContextualActionMode);
 
         btnSimpleMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +31,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, SubmenuActivity.class));
+            }
+        });
+
+        btnContextMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ContextMenuActivity.class));
+            }
+        });
+
+        btnContextualActionMode.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ContextualActionModeMenuActivity.class));
             }
         });
     }
